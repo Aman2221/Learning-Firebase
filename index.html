@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>FIREBASE</title>
+</head>
+<body>
+    <div id='main'>
+        <ul id='list'></ul>
+        <h1>Log in</h1>
+        <form id='LoginForm'>
+            <input id='login_Email' type="email" name='login_Email' value="" placeholder="Email">
+            <input id='login_Password' type="password" name='login_Password' value="" placeholder="Passwword">
+            <input type="submit" value="Login">
+        </form>
+
+        <h1>Sign up</h1>
+        <form id='SignupForm'>
+            <input id='signin_Email' type="email" value="" placeholder="Email">
+            <input id='signin_Password' type="password" value="" placeholder="Passwword">
+            <input type="submit" value="Login">
+        </form>
+
+        <h1>Sign out</h1>
+        <form id='SignoutForm'>
+            <input id='signout_Btn' type="button" value="Log out">
+        </form>
+    </div>
+
+<script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCE_rcMC7uikb-kOF5t_WkNCKRdbrzOiAc",
+            authDomain: "learning-f80ea.firebaseapp.com",
+            projectId: "learning-f80ea",
+            storageBucket: "learning-f80ea.appspot.com",
+            messagingSenderId: "841502367083",
+            appId: "1:841502367083:web:97c39291ce0a20156c402e"
+        };
+        firebase.initializeApp(firebaseConfig);
+        let db  = firebase.firestore();
+        let auth = firebase.auth();
+</script>
+<script src="./app.js"></script>
+</body>
+</html>
