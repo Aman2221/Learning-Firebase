@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(https://media-exp1.licdn.com/dms/image/C4D1BAQHxINS0YZXisg/company-background_10000/0/1566082835119?e=1610017200&v=beta&t=U60ATwUOdODDTspqxfb6WpjRTOgrnR8PkUZa6Jm_mbw) center no-repeat;
+}
+@media screen and ( max-width : 480px){
+    body{
+        background: url(https://register.wyfegypt.com/images/form-wizard-login.jpg) center no-repeat;
+        background-size: cover;
+    }
+}
+#main{
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+}
+#main ul {
+    text-decoration: none;
+}
+#main ul li{
+    font-size: 24px;
+}
+form{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    height: 35px;
+    width: 280px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 32px;
+    border : none;
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+    text-align: center;
+}
+#main h1{
+    position: relative;
+    bottom: -20px;
+    letter-spacing: .5px;
+}
